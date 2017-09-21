@@ -1,6 +1,6 @@
 # ShadowsocksX-NG
 
-Current version is 1.5.2
+Current version is 1.6.1
 
 [![Build Status](https://travis-ci.org/shadowsocks/ShadowsocksX-NG.svg?branch=develop)](https://travis-ci.org/shadowsocks/ShadowsocksX-NG)
 
@@ -33,37 +33,35 @@ From [here](https://github.com/shadowsocks/ShadowsocksX-NG/releases/)
 
 ## Features
 
-- Use `ss-local` from shadowsocks-libev 3.0.5
+- Uses `ss-local` from shadowsocks-libev 3.0.5
 - Could update PAC by download GFW List from GitHub.
-- Show QRCode for current server profile.
-- Scan QRCode from screen.
+- Shows QRCode for current server profile.
+- Scans QRCode from screen.
 - Auto launch at login.
 - User rules for PAC.
 - Support for [AEAD Ciphers](https://shadowsocks.org/en/spec/AEAD-Ciphers.html)
 - HTTP Proxy by [privoxy](http://www.privoxy.org/)
 - Over [kcptun](https://github.com/xtaci/kcptun). Version 20170322
 - Export/Import configure file.
-- An advanced preferences panel to configure:
+- An advanced preferences panel for configuring:
 	- Local SOCKS5 listen address.
 	- Local SOCKS5 listen port.
 	- Local SOCKS5 timeout.
 	- If enable UDP relay.
 	- GFW List URL.
-- Manual specify network service profiles which would be configure the proxy.
-- Could reorder shadowsocks profiles by drag & drop in servers preferences panel.
+- Manually specify network service profiles which would be used to configure the proxy.
+- Could reorder shadowsocks profiles by drag-&-dropping in servers preferences panel.
 - Configurable global shortcuts for toggle running and switch proxy mode.
 
-## Different from original ShadowsocksX
+## Difference from original ShadowsocksX
 
-Run `ss-local` as a background service through launchd, not as an in-app process.
-So after you quit the app, the `ss-local` maybe be still running.
+`ss-local` is run as a background service through launchd, not as an in-app process.
+So after you quit the app, the `ss-local` might be still running.
 
-Added a manual mode which won't configure the system proxy settings.
-Then you could configure your apps to use the SOCKS5 proxy manually.
+Added a manual mode which won't configure the system proxy settings,
+so that you could configure your apps to use the SOCKS5 proxy manually.
 
 ## Contributing
-
-[![gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ShadowsocksX-NG/Lobby)
 
 Contributions must be available on a separately named branch based on the latest version of the main branch `develop`.
 
